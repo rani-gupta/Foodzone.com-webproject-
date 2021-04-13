@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta name="viewport" content="width=device-width,initial-scale=1">  
+        <title>  foodzone/menu.com  </title> 
+        <style>
+            
+            .logo{ width: 200px; height: 100px; padding: 20px 100px;}
+
+            .navbar{   display: inline-block; float:right; margin-right: 400px; margin-top: 50px;}
+            .navbar a{ text-decoration: none; justify-content: space-between; font-family: Helvetica ; font-size: 1rem; color: black; padding: 15px 40px; 
+                        transition: all .3s ease;}
+            .navbar a.active{ background-color: rgb(248, 178, 48); color:white ; background-size: 2px 2px;}
+            .navbar a:hover{ background: rgb(248, 178, 48);  color:white; border-bottom: 1px solid grey;}
+
+            .shadow{   margin-left: -45px; margin-top: -15px; width: 110%; height: 50px; box-shadow: 0 20px 20px -20px #333; border-bottom: 1px solid #1f1209; border:none;}
+
+            main{
+                display: grid;
+                grid-template-columns: repeat(8,1fr);
+                grid-gap: 10px;
+                margin-bottom: 50px;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                height: 328px;
+                width: 90%;
+                margin-left: 80px;
+                /* overflow: hidden;  */
+                
+            }
+            
+            .menucard{
+                position: relative;
+                max-height: 300px;
+                height: 100%;
+                box-shadow: 0 2px 10px rgb(168, 143, 109);
+                transition: all 0.5s;
+                
+            }
+            .menucard:hover{
+                box-shadow: 0 2px 10px #ccc;
+                transition: all 0.5s;
+                border: 4px solid rgb(250, 146, 48);
+            }
+            
+            .menucard:hover img{
+                transform: scale(1:1);
+                transition: all 0.6s;
+                
+                
+            } 
+
+            .piccontent{
+                
+                position: absolute;
+                background-color: rgba(235, 181, 121, 0.815);
+                /* linear-gradient(45deg rgb(248, 178, 48) 0% , rgba(144,192,299,0.4) 100%);  */
+                transition: all 0.5s;
+                width: 250px;
+                color: rgb(100, 26, 26);
+            }
+
+            .menucard:hover .piccontent{ bottom: 50px;  transition: all 0.5s; color: rgb(255, 253, 255); background-color: rgba(7, 7, 7, 0.7);}
+
+            .piccontent a{
+                font-size: 17px;
+                font-weight: 500;
+                
+            }
+
+            .piccontent .btn{
+                display: block;
+                padding: 2px;
+                border: 1px solid rgb(185, 77, 5);
+                border-radius: 3px;
+                text-decoration: none;
+                font-weight: 900;
+                color:  rgb(255, 102, 0);
+                text-align: center;
+                background-color: rgb(247, 244, 242);
+            }
+
+            .piccontent .btn:hover{
+                background-color: rgb(255, 124, 2);
+                color: rgb(252, 246, 246);
+                text-decoration: none;
+                font-weight: 400;
+            }
+            
+            /* customize scrollbar  */
+            main::-webkit-scrollbar {
+            width: 0px;
+            }
+            
+            main::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(109, 107, 107, 0.3);
+            }
+            
+            main::-webkit-scrollbar-thumb {
+            background-color: rgb(255, 111, 50);
+            outline: 1px solid rgb(241, 241, 241);
+            }
+            /* end  */
+                    
+            span{font-size: 17px;}
+
+
+            .footer{ background-color: rgb(41, 10, 10);   width: 100%; height: 47px;  margin-top: 0px; 
+            text-align: center;color: blanchedalmond; padding-top: 10px;}
+
+            </style>
+    </head>
+    <body>
+        <div style="background-color: rgb(87, 20, 20); height: 10px; width: 100%;"></div>
+    <div class="container ">
+        <img  class="logo" src="l.jpg">
+        <nav class="navbar">
+            
+            <a href="foodzone.html"> Home  </a>
+            <a href="about.html"> About </a>
+            <a href="chef.html"> Chef </a>
+            <a href="menu.html" class="active"> Menu </a>
+            <a href="contact.html"> Contact </a>
+            <hr class="shadow"> 
+        </nav>
+         <!-- wrte your code for menu  -->
+
+          <!-- Breakfast Section  -->
+         <h1 style="text-align: center; ">Breakfast<br><img src="line.png" height="27px"></h1>
+         
+         
+         <main>
+            
+             <div class="menucard">
+                <img src="dishes/upma.jpg" height="200" width="250">
+                <div class="piccontent">
+                    <h3 style="text-align: center;">Upma <br><span>90 Rs.</span> </h3>
+                    <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="menucard">
+                <img src="dishes/samosa.jpg" height="200" width="250">
+                <div class="piccontent">
+                    <h3 style="text-align: center;">Samosa <br><span>40 Rs.</span></h3>
+                    <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+                </div>  
+            </div>
+
+            <div class="menucard">
+                <img src="dishes/pav_bhaji.jpg" height="200" width="250">
+                <div class="piccontent">
+                    <h3 style="text-align: center;">Pav bhaji <br><span>150 Rs. </span></h3>
+                    <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="menucard">
+                <img src="dishes/poha.jpg" height="200" width="250">
+                <div class="piccontent">
+                    <h3 style="text-align: center;">Poha <br><span>60 Rs.</span></h3>
+                    <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="menucard">
+                <img src="dishes/dosa.jpg" height="200" width="250">
+                <div class="piccontent">
+                    <h3 style="text-align: center;">Dosa <br><span>160 Rs.</span></h3>
+                    
+                    <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="menucard">
+                <img src="dishes/medu_vada.jpg" height="200" width="250">
+                <div class="piccontent">
+                    <h3 style="text-align: center;">Medu vada <br><span>100 Rs.</span></h3>
+                    <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="menucard">
+                <img src="dishes/idli.jpg" height="200" width="250">
+                <div class="piccontent">
+                    <h3 style="text-align: center;">Rava idli <br><span>130 Rs.</span></h3>
+                    <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="menucard">
+                <img src="dishes/aloo_paratha.jpg" height="200" width="250">
+                <div class="piccontent">
+                    <h3 style="text-align: center;">Aloo paratha <br><span>35 Rs.</span></h3>
+                    <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+            </div>
+        </main>
+
+        <!-- Lunch section  -->
+
+        <h1 style="text-align: center; ">Lunch<br><img src="line.png" height="27px"></h1>
+        <main>
+            
+            <div class="menucard">
+               <img src="dishes/rajma.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Rajma chawal <br><span>120 Rs.</span> </h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/bisibelebath.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Bisi Bele bhaat <br><span>160 Rs.</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/chana.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Chana masala <br><span>110 Rs. </span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/bhindi.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Bhindi masala <br><span>85 Rs.</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/parippu.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Parippu curry <br><span>140 Rs.</span></h3>
+                   
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/akkiroti.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Akki roti <br><span>50 Rs.(1 psc.)</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>  
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/kathiroll.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Kathi roll <br><span>55 Rs.(1 psc.)</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/jeerarice.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Jeera rice <br><span> 75 Rs.</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </main>
+    
+       <!-- Dinner Section  -->
+
+       <h1 style="text-align: center; ">Dinner<br><img src="line.png" height="27px"></h1>
+       <main>
+            
+        <div class="menucard">
+           <img src="dishes/biryani.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;"> Veg biryani <br><span>120 Rs.</span> </h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/paneer.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Paneer Butter masala <br><span>135 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/naan.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Butter naan <br><span>35 Rs.(1 psc.) </span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/palakpaneer.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Palak panner <br><span>90 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/dal_fry.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Dal fry <br><span>75 Rs.</span></h3>
+               
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/matar_paneer.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Matar panner <br><span>80 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>  
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/aloo_jeera.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Aloo jeera <br><span>70 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/mixvegpratha.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Mix Veg paratha <br><span>35 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+       </div>
+   </main>
+
+    <!-- Desert section  -->
+
+        <h1 style="text-align: center; ">Desert & Drinks<br><img src="line.png" height="27px"></h1>
+        <main>
+            
+            <div class="menucard">
+               <img src="dishes/gulab_jamun.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Gulab jamun <br><span>12 Rs.(1 psc.)</span> </h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/icecream.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Icecream(Butterscotch) <br><span>70 Rs.(1 Scoop)</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/brownie.png" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Brownie <br><span>185 Rs. </span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/waffle.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Waffles(chocolate) <br><span>225 Rs.</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/pestries.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Pastries <br><span>110 Rs.(2 psc.)</span></h3>
+                   
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/pencake.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Pancake<br><span>185 Rs.(3psc)</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>  
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/lassi.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Lassi <br><span>40 Rs.(1 glass)</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+               </div>
+           </div>
+
+           <div class="menucard">
+               <img src="dishes/shakes.jpg" height="200" width="250">
+               <div class="piccontent">
+                   <h3 style="text-align: center;">Shakes(all flavours) <br><span> 55 Rs.(per glass)</span></h3>
+                   <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </main>
+    
+       <!-- best seller Section  -->
+
+       <h1 style="text-align: center; ">Best Seller<br><img src="line.png" height="27px"></h1>
+       <main>
+            
+        <div class="menucard">
+           <img src="dishes/golgappe.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;"> Pani puri <br><span>20 Rs.(6 psc.)</span> </h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/pizza.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Pizza(foodzone spe.) <br><span>165 Rs.(medium size)</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/pasta.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Pasta <br><span> 60Rs. </span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/burger.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Burger(foodzone spe.) <br><span>190 Rs.(2 psc.)</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/noodles.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Noodles <br><span>55 Rs.</span></h3>
+               
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/momos.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Momos <br><span>30 Rs.(5psc.)</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>  
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/sandwich.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Sandwich <br><span>90 Rs.(2 psc.)</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/paneer_tikka.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Paneer tikka <br><span>40 Rs.(2 sticks)</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+       </div>
+   </main>
+   <!-- Thali Section  -->
+
+       <h1 style="text-align: center; ">Special Thali<br><img src="line.png" height="27px"></h1>
+       <main>
+            
+        <div class="menucard">
+           <img src="dishes/rajasthani.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;"> Rajasthani thali <br><span>400 Rs.</span> </h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/gujrati.png" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Gujrati thali <br><span>365 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/southindian.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">South Indian thali <br><span> 360 Rs. </span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/marathi.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Maharashtrian thali <br><span>440 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/punjabi.jfif" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Punjabi thali <br><span>315 Rs.</span></h3>
+               
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/italian.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Italian thali <br><span>300 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>  
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/bengali.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Bengali thali <br><span>390 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+           </div>
+       </div>
+
+       <div class="menucard">
+           <img src="dishes/bihari.jpg" height="200" width="250">
+           <div class="piccontent">
+               <h3 style="text-align: center;">Bihari thali <br><span>590 Rs.</span></h3>
+               <a href="" class="btn"> <img src="cart.png" style="height: 15px; width: 15px;">&nbsp;Add to Cart</a>
+       </div>
+   </main>
+   
+        <!-- footer  -->
+        <div class="footer">
+            Follow us on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            
+            <img src="twi.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="lin.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="yt.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="fb.png" width="20" height="20">
+            <h6 style="margin-top: 7px;">@ 2021 foodzone . All Rights Reserved | Design by Rani Gupta </h6>
+        </div> 
+        </body>
+
+</html>
+    

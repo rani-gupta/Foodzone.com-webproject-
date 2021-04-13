@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta name="viewport" content="width=device-width,initial-scale=1">  
+        <title>  foodzone/contact.com  </title> 
+        <style>
+            
+
+            .logo{ width: 200px; height: 100px; padding: 20px 100px;}
+
+            .navbar{   display: inline-block; float:right; margin-right: 400px; margin-top: 50px;}
+            .navbar a{ text-decoration: none; justify-content: space-between; font-family: Helvetica ; font-size: 1rem; color: black; padding: 15px 40px; 
+                        transition: all .3s ease;}
+            .navbar a.active{ background-color: rgb(248, 178, 48); color:white ; background-size: 2px 2px;}
+            .navbar a:hover{ background: rgb(248, 178, 48);  color:white; border-bottom: 1px solid grey;}
+            
+            .shadow{   margin-left: -45px; margin-top: -15px; width: 110%; height: 50px; box-shadow: 0 20px 20px -20px #333; border-bottom: 1px solid #1f1209; border:none;}
+            .form{
+                margin-top: 20px;
+                padding-top: 20px;
+                margin-left: 200px;
+                font-family:'Times New Roman';
+            }
+            .sendmsgbtn{ background-color:rgb(231, 104, 0); width:38%;  border-radius: 5px;
+                font-family:Helvetica; font-weight: bold; font-size: medium;
+            color: white; margin-top: 12px; padding: 10px; border: none;}
+
+            .sendmsgbtn:focus{border:none; outline: none;} /*write so that when we click button no border and outline will come */
+            .sendmsgbtn:hover{ background-color:rgb(247, 161, 3);  } /*define the properties when cursor is move onto the button */
+        
+
+            input[type=text],textarea{
+            padding: 10px;
+            margin-bottom: 20px;
+            width: 450px;
+            
+            }
+            .map{
+                float: right;
+                 margin-right: 90px;
+                 margin-top: -390px;
+            }
+
+            .footer{ background-color: rgb(41, 10, 10);   width: 100%; height: 560px;  margin-top: 0px;   padding: 5px 0px; text-align: center;
+                color: blanchedalmond;
+                }
+            p{ color: rgb(202, 198, 198);}
+
+            </style>
+    </head>
+    <body>
+        <div style="background-color: rgb(87, 20, 20); height: 10px; width: 100%;"></div>
+    <div class="container ">
+        <img  class="logo" src="l.jpg">
+        <nav class="navbar">
+            
+            <a href="foodzone.html" > Home  </a>
+            <a href="about.html" > About </a>
+            <a href="chef.html" > Chef </a>
+            <a href="menu.html"> Menu </a>
+            <a href="contact.html" class="active"> Contact </a>
+            <hr class="shadow"> 
+        </nav>
+        <div style="background: url(b.jpg) no-repeat;  background-size: cover; height: 450px ; ">
+            <div class="form">
+                <h1>Contact Us</h1>
+                <form>
+                    <!-- name -->
+                    <input type="text" maxlength="50" name="fullName" placeholder="Full name" /><br>
+                    <!-- email  -->
+                    <input type="text" maxlength="80" name="email" placeholder="Email address" /><br>
+
+                    <!-- leave a message  -->
+                    <textarea rows="7" cols="25" placeholder="Message" value="msg"></textarea><br>
+                    
+                    <button type="submit" class="sendmsgbtn">Send Message</button>
+                    
+                    
+                    
+                    </form>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3559.713471193859!2d75.77196481465883!3d26.849064269291635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396db5bd4ca39ef3%3A0x9a38b5579f8003e8!2sFood%20Zone!5e0!3m2!1sen!2sin!4v1617904190653!5m2!1sen!2sin" 
+                    width="600" height="400" style="border:0;" allowfullscreen="" ></iframe>
+                    </div>
+            </div>
+        <div class="footer">
+            
+            <h3>RESERVATIONS</h3>
+            <hr width="5%" >
+            <p>Please call<br>+91 6798456789</p><br>
+            
+
+
+            <h3>ADDRESS</h3>
+            <hr width="3%">
+            <p> Shipra Path, Jhalana Chhod, <br>Mansarovar, Jaipur, Rajasthan 302020 </p><br>
+            
+
+            
+            <h3>OPENING HOURS</h3>
+            <hr width="5%">
+            <p>MON-FRI: 10:00 AM - 11:00 PM <br> SAT-SUN: 11:00AM - 02:00 AM</p><br><br><br>
+            
+
+            
+            Follow us on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            
+            <img src="twi.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="lin.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="yt.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="fb.png" width="20" height="20">
+           
+            <h6 style="margin-top: 7px;">@ 2021 foodzone . All Rights Reserved | Design by Rani Gupta </h6>
+        </div>
+        </body>
+
+</html>
+    

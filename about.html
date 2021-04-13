@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta name="viewport" content="width=device-width,initial-scale=1">  
+        <title>  foodzone/about.com  </title> 
+        <style>
+           
+
+
+            .logo{ width: 200px; height: 100px; padding: 20px 100px;}
+
+            .navbar{   display: inline-block; float:right; margin-right: 400px; margin-top: 50px;}
+            .navbar a{ text-decoration: none; justify-content: space-between; font-family: Helvetica ; font-size: 1rem; color: black; padding: 15px 40px; 
+                        transition: all .3s ease;}
+            .navbar a.active{ background-color: rgb(248, 178, 48); color:white ; background-size: 2px 2px;}
+            .navbar a:hover{ background: rgb(248, 178, 48);  color:white; border-bottom: 1px solid grey;}
+            
+            .shadow{   margin-left: -45px; margin-top: -15px; width: 110%; height: 50px; box-shadow: 0 20px 20px -20px #333; border-bottom: 1px solid #1f1209; border:none;}
+            
+            .main{
+                margin: 40px 700px 0px 150px;
+                background-color: rgb(255, 225, 185);
+                height: 380px;
+                width: 600px;
+                float: left;
+                /* transform: scale(1, 1) rotate(-2deg); used to rotate a picture  */
+
+            }
+            .aboutus{
+                text-align: left;
+                padding: 20px 90px ;}
+                
+
+
+            #slideshow {
+            overflow: hidden;
+            height: 370px;
+            width: 710px;
+            margin: 0 auto;
+            }
+
+            .slide-wrapper {
+            width: 10000px;
+            -webkit-animation: slide 15s ease infinite;
+            }
+
+            .slide {
+            float: left;
+            height: 370px;
+            width: 700px;
+            }
+
+
+
+            @-webkit-keyframes slide {
+            20% {margin-left: 0px;}
+            30% {margin-left: 700px;}
+            50% {margin-left: -700px;}
+            60% {margin-left: 1400x;}
+            70% {margin-left: -1400px;}
+            80% {margin-left: -2100px;}
+            90% {margin-left: -2100px;}
+            }
+
+            .footer{ background-color: rgb(41, 10, 10);   width: 100%; height: 47px;  margin-top: 0px; 
+            text-align: center;color: blanchedalmond; padding-top: 10px;}
+
+            </style>
+    </head>
+    <body>
+        <div style="background-color: rgb(87, 20, 20); height: 10px; width: 100%;"></div>
+    <div class="container ">
+        <img  class="logo" src="l.jpg">
+        <nav class="navbar">
+            
+            <a href="foodzone.html" > Home  </a>
+            <a href="about.html" class="active"> About </a>
+            <a href="chef.html"> Chef </a>
+            <a href="menu.html"> Menu </a>
+            <a href="contact.html"> Contact </a>
+            <hr class="shadow"> 
+        </nav>
+        <div style=" background: url(b.jpg) no-repeat; background-size: cover; height: 490px ;">
+        <marquee direction="right" behavior="slide" scrollamount="150" >
+        <div class="main">
+            
+            <div class="aboutus">
+            <p style="color: rgb(87, 84, 84);">Read Our story</p>
+            <h1 style="color: rgb(48, 41, 41);">We've been Making The <br>Delicious Foods Since 1990 </h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.<br> Pellentesque auctor suscipit feugiat. Ut at pellentesque ante, <br>
+                sed convallis arcu. Nullam facilisis, eros in eleifend luctus, odio<br> ante sodales augue, eget lacinia lectus erat et sem.</p>
+                <p>Sed semper orci sit amet porta placerat. Etiam quis finibus eros. <br>Sed aliquam metus lorem, a pellentesque tellus pretium a.
+                 Nulla<br> placerat elit in justo vestibulum, et maximus sem pulvinar.<br></p>
+    
+                </div>
+            </div>
+        </marquee>
+
+        <div id="slideshow" style="float: right; margin-top: -380px;">
+            <div class="slide-wrapper">
+              <div class="slide"><img src="p1.jpg" width="650" height="370"></div>
+              <div class="slide"><img src="k2.jpg" width="650" height="370"></div>
+              <div class="slide"><img src="k3.jpg" width="700" height="370"></div>
+              <div class="slide"><img src="res2.jpg" width="650" height="370"></div>              
+            </div>
+        </div>
+    </div>
+        <div class="footer">
+            Follow us on&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+            
+            <img src="twi.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="lin.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="yt.png" width="20" height="20">&nbsp;&nbsp;&nbsp;
+            <img src="fb.png" width="20" height="20">
+            <h6 style="margin-top: 7px;">@ 2021 foodzone . All Rights Reserved | Design by Rani Gupta </h6>
+        </div>
+        </body>
+
+</html>
+    

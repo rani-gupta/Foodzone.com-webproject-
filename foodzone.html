@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta name="viewport" content="width=device-width,initial-scale=1">  
+        <title>  foodzone.com  </title>  
+        <style>
+        .container{
+        background: url("bg.jpg") no-repeat; 
+        background-size: cover; 
+        height: 96vh;}
+
+        .main{ 
+            margin-top: 60px;
+            margin-left: 500px; 
+            font-family: Helvetica ;
+            
+        }
+        h5{
+            color: rgb(107, 107, 107);
+            
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        .logo{ width: 200px; height: 100px; padding: 20px 100px;}
+        .navbar{   display: inline-block; float:right; margin-right: 400px; margin-top: 50px;}
+        .navbar a{ text-decoration: none; justify-content: space-between; font-family: Helvetica ; font-size: 1rem; color: black; padding: 15px 40px; 
+        transition: all .3s ease;
+             }
+        .navbar a.active{ background-color: rgb(248, 178, 48); color:white ; background-size: 2px 2px;
+        }
+        .navbar a:hover{ background: rgb(248, 178, 48);  color:white; border-bottom: 1px solid grey;}
+        .shadow{   margin-left: -45px; margin-top: -15px; width: 110%; height: 50px; box-shadow: 0 20px 20px -20px #333; border-bottom: 1px solid #1f1209; border:none;}
+
+        .orderfoodbtn{
+            color:whitesmoke;
+            background-color:rgb(247, 113, 3);
+            border-radius: 5px;
+            width: 150px;
+            height: 40px;
+            margin-left: 850px; 
+            margin-top: 50px;
+            display: flex;
+            cursor:pointer;
+            justify-content: center;
+            border: none;
+            font-family: Helvetica;
+            align-items:center;
+        }
+        .orderfoodbtn:focus{border:none; outline: none;} /*write so that when we click button no border and outline will come */
+        .orderfoodbtn:hover{ background-color:rgb(247, 161, 3); opacity:0.9; } /*define the properties when cursor is move onto the button */
+        
+        .animatedtext{
+            margin: 0px 150px 0px 10px; /* Top right bottom left */ 
+            text-align: center;
+            font-weight: bolder;
+            font-family: Arial;
+            color: rgb(117, 46, 5);
+            
+        }
+        
+    
+        
+         </style>
+    </head>
+<body>
+    <div style="background-color: rgb(87, 20, 20); height: 10px; width: 100%;"></div>
+    <div class="container ">
+        <img  class="logo" src="l.jpg">
+        <nav class="navbar">
+            
+            <a href="foodzone.html" class="active"> Home  </a>
+            <a href="about.html"> About </a>
+            <a href="chef.html"> Chef </a>
+            <a href="menu.html"> Menu </a>
+            <a href="contact.html"> Contact </a>
+            <hr class="shadow"> 
+        </nav>
+        
+        <div class="main">
+            <h4 style="color: rgb(6, 6, 83);">New restaurant in the town</h4> 
+            <b><h1 style="color:  rgb(20, 6, 6);">Enjoy our special menus every <br>Sunday and Friday</h1></b>
+            <h5 style="font-family: w3-cursive;"> Have no time to prepare <font style="color: rgb(255, 166, 0);"><b>food</b></font>? choose your favourite food from our menu,enter <br>delivery time 
+                and enjoy delicious  food without leaving your home!</h5>
+
+               
+            </div>
+        <button type="submit" class="orderfoodbtn" ><b>Order Food</b></button>
+        <div class="animatedtext">
+            <marquee direction="right" height="150px" width="150px" behavior="slide" scrollamount="15"><img src="chef.jpg" width="150" height="150"></marquee>
+            <marquee direction="left" height="60px" width="190px" behavior="slide" scrollamount="15"> Delight <font style="color: rgb(255, 166, 0);">in</font> Every
+                 <font style="color: rgb(255, 166, 0);">Bite</font></marquee>
+            
+           </div> 
+        
+
+     </div>
+
+     
+ 
+    </body>
+</html>
+
